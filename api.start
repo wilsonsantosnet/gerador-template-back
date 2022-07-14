@@ -96,10 +96,10 @@ namespace <#namespace#>.Api
 			
             
             //AutoMapper
-            services.AddAutoMapper(AutoMapperConfig<#namespace#>.RegisterMappings());
+            services.AddAutoMapper(AutoMapperConfig<#namespaceRoot#>.RegisterMappings());
 
             // Add application services.
-            ConfigContainer<#namespace#>.Config(services);
+            ConfigContainer<#namespaceRoot#>.Config(services);
 
             //Policys
             services.AddAuthorizationPolicy(ProfileCustom.Define);
